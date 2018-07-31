@@ -1,0 +1,2 @@
+quantize:
+	sh ./quantize.sh
