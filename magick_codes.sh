@@ -11,7 +11,7 @@ display colors_8_rm.gif
 convert /home/aida/nyrb-colors-analysis/nyrb-colors-analysis/covers/when-the-world-spoke-french.jpg -format %c -depth 5 histogram:info:histogram_image.txt | sort -n histogram_image.txt | tail -5
 
 # 1) color quantization 2) display image
-convert /home/aida/nyrb-colors-analysis/nyrb-colors-analysis/covers/when-the-world-spoke-french.jpg -dither Riemersma -colors 5 colors_8_rm.gif | display colors_8_rm.gif
+convert /home/aida/nyrb-colors-analysis/nyrb-colors-analysis/covers/when-the-world-spoke-french.jpg -dither Riemersma -colors 5 colors_8_rm.gif & display colors_8_rm.gif
 
 # 1) color quantization 2) histogram of five colors
 convert /home/aida/nyrb-colors-analysis/nyrb-colors-analysis/covers/when-the-world-spoke-french.jpg -dither Riemersma -colors 8 \
@@ -22,6 +22,7 @@ convert /home/aida/nyrb-colors-analysis/nyrb-colors-analysis/covers/when-the-wor
 # to get into imagemagick
 sudo -i
 cd ImageMagick-7.0.8-8
+# you don't even need to do this -- imagemagick commands work from the command line, any repo
 
 # colors with lots of different shades of similar colors are tricky 	
 # I think that these will require color quantization in order to reduce the number of different shades
