@@ -1,0 +1,19 @@
+body {
+	max-width: 800px;
+	margin: 50px auto;
+}
+section {
+	clear: both;
+	display: block;
+	margin-bottom: 600px;
+	height: 100px;
+}
+.book {
+	margin-left: 20px;
+}
+.book .swatch {
+	height: 45px;
+	width: 50px;
+	display: inline;
+	float: left;
+}
