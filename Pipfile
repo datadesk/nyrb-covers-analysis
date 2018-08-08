@@ -7,6 +7,7 @@ name = "pypi"
 jupyterlab = "*"
 requests = "*"
 "bs4" = "*"
+pillow = "*"
 
 [dev-packages]
 
